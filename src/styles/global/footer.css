@@ -1,0 +1,9 @@
+.footerCont{
+    background-color: gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: medium;
+}

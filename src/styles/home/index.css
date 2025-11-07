@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  max-width: 95%;
+  margin:0px auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: xx-large;
+    font-weight: bold;
+}
+input,textarea{
+    background: transparent;
+    border: 1px solid Aqua;
+    padding: 4px;
+    border-radius: 5px;
+    color: aqua;
+    @apply hover:border-appAqua focus:border-appAqua;
+}
+input::placeholder{
+    text-transform: capitalize;
+@apply text-appAqua font-extralight
+}
+input:active{
+    @apply border-appAqua
+}
+.primary-btn{
+   @apply bg-green-800 text-appAqua border-2 border-appAqua px-6 py-1 capitalize rounded-[4px] hover:scale-95
+}
+.slide{
+  animation: move 0.5s 1;
+}
+@keyframes move {
+  from{transform: translateX(100%);}
+  to{transform: translate();} 
+}
+label{
+  display: block;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+body::selection{
+@apply   bg-appAqua  text-black
+}
