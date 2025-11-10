@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { errorNotification, infoNotification, successNotification } from "../utils/helper";
 
+
 const ContactsPage=()=>{
     const [username,setusername]=useState();
     const [content,setcontent]=useState();
@@ -23,7 +24,7 @@ const ContactsPage=()=>{
           infoNotification("fields are required")
          }
 
-
+    setissubmitting(false)
             if(!username){
               setwarning({username:"username field is reqiured!"});
             }else if(!content){
@@ -37,7 +38,6 @@ const ContactsPage=()=>{
                console.log("username:",username);
                  console.log("content",content);
              }
-    setissubmitting(false)
              }
      return(<div className="container py-[150px]">
          <div className= "w-[80%] lg:w-[30%] m-auto rounded-lg p-3 text-appAqua flex flex-col justify-center items-center gap-2 border border-appAqua">
@@ -54,7 +54,7 @@ const ContactsPage=()=>{
                       {warning?.content && <div className="text-red-600">{warning?.content}</div>}
               </div>
 
-              <button onClick={issubmitting? null :submitFeedBackForm} className="primary-btn w-[100%]">{issubmitting? `sending...`:"send message"}</button>
+              <button type="submit" onClick={issubmitting? null :submitFeedBackForm} className="primary-btn w-[100%]">{issubmitting? `sending...`:"send message"}</button>
          </div>
      </div>
      )}

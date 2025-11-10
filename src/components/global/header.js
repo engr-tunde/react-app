@@ -95,7 +95,7 @@ const Header=({logo,FirstName,handlebg})=>{
     <header className=" bg-black text-appAqua border-b border-appAqua fixed top-0 w-[100%] py-3 capitalize">
       <div className="container p-2 hidden lg:flex items-center justify-between h-10">
          <Link to="/home" className="flex text-5xl font-bold ">
-          <img src="https://forxbit.vercel.app/assets/images/logo-green-2.png" className="h-14"/>
+          <img src="https://forxbit.vercel.app/assets/images/logo-green-2.png" alt="" className="h-14"/>
          {logo}
 
          </Link>
@@ -155,7 +155,7 @@ const Header=({logo,FirstName,handlebg})=>{
             </div>
             <div className="bg-black w-[100%] lg:w-[60%] h-[70%] lg:h-full rounded-bl-[30px] rounded-br-[30px] lg:rounded-r-[30px] rounded-l text-appAqua px-2">
                 <div className="flex flex-col items-center gap-3 mt-4">
-                  <div><img src="https://forxbit.vercel.app/assets/images/logo-green.png"className="h-20"/></div>
+                  <div><img src="https://forxbit.vercel.app/assets/images/logo-green.png" alt="" className="h-20"/></div>
                   <h2 className="capitalize text-appAqua text-center">login into your account</h2>
                    <form className=" w-[80%] flex flex-col justify-center gap-3" >
                     <div>
@@ -176,7 +176,7 @@ const Header=({logo,FirstName,handlebg})=>{
        </div>
        <div className="container ">
             <section className= {profileCont===true?"bg-black border-2 border-appAqua text-white flex flex-col lg:flex-rows items-center justify-center gap-3 py-5 mt-20 lg:mt-16 rounded-3xl slide":"hidden"}>
-      <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-1/514336242_745323597994946_4217475317495265862_n.jpg?stp=dst-jpg_p160x160_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGyJBJsqcWlNlvYXPmyGxkzXq9pGqEq2-Jer2kaoSrb4vNsvlKm1K76ZKYQyzh4AujVyFWZXEKtT5s2JWTpxRK-&_nc_ohc=WeD82bmqpKsQ7kNvwF1zTH3&_nc_oc=Adm-222swToAFWwRlfPaoPVghPxbKcstGVUTqqVgrnpCw3SKO0IjA5PWVZ-OA-4W-3w&_nc_zt=24&_nc_ht=scontent.flos2-2.fna&_nc_gid=Ih6UWtbWhXCHcQd_41YKrw&oh=00_AfflTF4y-Cx2FEuO0MyBydY7tJnKvP4n5rMv-KN_ZcsSYQ&oe=68FD8906"  className="rounded-[50%] h-[100px] w-[100px]"/>  
+      <img src="https://scontent.flos2-2.fna.fbcdn.net/v/t39.30808-1/514336242_745323597994946_4217475317495265862_n.jpg?stp=dst-jpg_p160x160_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGyJBJsqcWlNlvYXPmyGxkzXq9pGqEq2-Jer2kaoSrb4vNsvlKm1K76ZKYQyzh4AujVyFWZXEKtT5s2JWTpxRK-&_nc_ohc=WeD82bmqpKsQ7kNvwF1zTH3&_nc_oc=Adm-222swToAFWwRlfPaoPVghPxbKcstGVUTqqVgrnpCw3SKO0IjA5PWVZ-OA-4W-3w&_nc_zt=24&_nc_ht=scontent.flos2-2.fna&_nc_gid=Ih6UWtbWhXCHcQd_41YKrw&oh=00_AfflTF4y-Cx2FEuO0MyBydY7tJnKvP4n5rMv-KN_ZcsSYQ&oe=68FD8906" alt=""  className="rounded-[50%] h-[100px] w-[100px]"/>  
         <div className="flex flex-col items-center text-appAqua">
          <div className="text-xl font-bold flex items-center justify-between gap-4">{greetuser}<FaHand className="text-appAqua" /></div>
         <div>Welcome to react js! </div>
@@ -187,7 +187,7 @@ const Header=({logo,FirstName,handlebg})=>{
       {/* mobile header */}
       <div className=" lg:hidden  bg-black p-2 flex items-center justify-between fixed top-0 w-[100%] border-b border-appAqua">
            <div className="text-2xl font-bold text-appAqua capitalize flex items-center">
-            <img src="https://forxbit.vercel.app/assets/images/logo-green-2.png" className="h-10"/>
+            <img src="https://forxbit.vercel.app/assets/images/logo-green-2.png" alt="" className="h-10"/>
          {logo}
          </div>
           <div className="text-4xl text-appAqua"onClick={openMobilemenu}><FaBars /></div>
