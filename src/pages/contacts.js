@@ -41,7 +41,7 @@ const ContactsPage=()=>{
              }
      return(<div className="container py-[150px]">
          <div className= "w-[80%] lg:w-[30%] m-auto rounded-lg p-3 text-appAqua flex flex-col justify-center items-center gap-2 border border-appAqua">
-            <h3>Give us feed back</h3>
+            <h3>Give us feed back now!</h3>
               <div  className="w-full">
                 <label>Username</label>
                 <input onChange={(event)=>setusername(event.target.value)} type="text" placeholder="Username" className="w-[100%]" required/>
