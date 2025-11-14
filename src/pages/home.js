@@ -50,7 +50,7 @@ const Homepage=()=>{
            <div className="flex flex-col lg:flex-row justify-center lg:justify-between w-[100%] lg:pr-8 gap-8">
              <div className="bg-appAqua w-[100%] lg:w-[50%] h-[30%] lg:h-full  rounded-t-3xl rounded-b-[50%] lg:rounded-l-3xl lg:rounded-r-[50%] flex  items-center">
            <div className="flex flex-col items-center justify-center p-10 text-center">
-             <h4 className="text-black text-2xl lg:text-3xl capitalize">welcome dev.{name} !,to {logo} our dear user!</h4>
+             <h4 className="text-black text-2xl lg:text-3xl capitalize color">welcome dev.{name} !,to {logo} our dear user!</h4>
              <p className="text-black">where the word impossible doesn't exist</p>
            </div>
         </div>
@@ -66,7 +66,30 @@ const Homepage=()=>{
               </div>
            </div>
            </div>
-
+               <div className=" absolute top-[50%] lg:top-[20%] h-[100%] flex justify-center items-center"> 
+                  
+     <div className="circle" style={{'--i':0}}></div>
+     <div className="circle" style={{'--i':1}}></div>
+     <div className="circle" style={{'--i':2}}></div>
+     <div className="circle" style={{'--i':3}}></div>
+     <div className="circle" style={{'--i':4}}></div>
+     <div className="circle" style={{'--i':5}}></div>
+     <div className="circle" style={{'--i':6}}></div>
+     <div className="circle" style={{'--i':7}}></div>
+     <div className="circle" style={{'--i':8}}></div>
+     <div className="circle" style={{'--i':9}}></div>
+     <div className="circle" style={{'--i':10}}></div>
+     <div className="circle" style={{'--i':11}}></div>
+     <div className="circle" style={{'--i':12}}></div>
+     <div className="circle" style={{'--i':13}}></div>
+     <div className="circle" style={{'--i':14}}></div>
+     <div className="circle" style={{'--i':15}}></div>
+     <div className="circle" style={{'--i':16}}></div>
+     <div className="circle" style={{'--i':17}}></div>
+     <div className="circle" style={{'--i':18}}></div>
+     <div className="circle" style={{'--i':18}}></div>
+     <div className="circle" style={{'--i':20}}></div>
+  </div>
               <div className=" h-screen w-full py-6">
                         <div className="mt-10 mx-auto w-[95%] lg:w-[70%] rounded-[30px] h-[95%] lg:h-[80%] flex flex-col lg:flex-row ">
                       

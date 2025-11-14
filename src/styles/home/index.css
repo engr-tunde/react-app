@@ -48,3 +48,46 @@ label{
 body::selection{
 @apply   bg-appAqua  text-black
 }
+.circle{
+    position: absolute;
+    background: transparent;
+    width: calc(var(--i)*2.5vmin);
+    aspect-ratio:1;
+    border-radius: 50%;
+    border: 3px solid aqua;
+    transform-style: preserve-3d;
+    transform: rotateX(70deg) translateZ(50px);
+    animation: move 3s ease-in-out calc(var(--i)*0.08s) infinite;
+    box-shadow: 0 0 15px aqua, inset 0 0 15px aqua;
+}
+
+@keyframes move {
+    0%,
+    100%{
+        transform:rotateX(70deg) translateZ(100px) translateY(0);
+        filter:hue-rotate(0);
+    }
+    50%{
+        transform: rotateX(70deg) translateZ(50px) translateY(300px);
+    }
+}
+.welcomeAnim{
+    animation: color 1s linear infinite;
+}
+
+@keyframes color {
+    0%{ background: linear-gradient(to right,blue,red);
+          -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(to right ,red,blue,red);
+          -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    }
+     100%{
+        background: linear-gradient(to right,red,blue);
+          -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    }
+}
